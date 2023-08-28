@@ -6,7 +6,17 @@
   color: var(--basic-text-color);
 }
 
-
 .content-section {
-  padding-left: 0 10vw;
+  padding: 0 5vi;
 }
+
+.heading {
+  color: var(--accent-color);
+font-family: var(--main-font, sans-serif), 'IBM Plex Mono', 'Arial', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.3;
+}
+
+
