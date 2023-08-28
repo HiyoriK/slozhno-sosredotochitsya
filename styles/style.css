@@ -4,19 +4,92 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
   color: var(--basic-text-color);
+  background-image: url(/images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .content-section {
   padding: 0 5vi;
 }
 
-.heading {
-  color: var(--accent-color);
-font-family: var(--main-font, sans-serif), 'IBM Plex Mono', 'Arial', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 1.3;
+.decorated-zone {
 }
 
 
+.header__theme-menu-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+  outline: none;
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+ text-decoration: underline;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid currentColor;
+  cursor: pointer;
+ }
+
+
+
+.heading {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header__heading {
+  color: var(--header-text-color);
+  text-shadow: 4px 4px 0px var(--shadow-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.82;
+  justify-self: start;
+}
+
+.title-decor {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+
+.header__description {
+  font-weight: 700;
+  justify-self: start;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.list-item__title {
+  margin-block-end: 10px;
+}
+
+
+.shadow-text {
+  text-shadow: 3px 1px 0px var(--shadow-color);
+}

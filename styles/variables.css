@@ -1,9 +1,8 @@
 :root {
   --basic-text-color: #f1b2ce;
-  --heading-text-color: #000028;
+  --second-text-color: #000028;
   --accent-color: #ff0070;
   --background-color: #000028;
   --header-text-color: #db00ff;
   --shadow-color: #ff0070;
-  --main-font: 'IBM Plex Mono';
 }
