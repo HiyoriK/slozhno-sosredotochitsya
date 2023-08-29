@@ -1,7 +1,5 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
   color: var(--basic-text-color);
   background-image: url(/images/cover-image-dark.png);
@@ -12,10 +10,59 @@
 }
 
 .content-section {
-  padding: 0 5vi;
+  padding: 0 var(--page-padding);
 }
 
 .decorated-zone {
+  block-size:  668px;
+  inline-size: 375px;
+  display: grid;
+  padding: var(--page-padding);
+  grid-template-rows: 1fr minmax(99px, 192px), 1fr;
+}
+
+.decorated-zone::after {
+  content: '';
+  display: inline-block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before{
+  content: '';
+  display: inline-block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  margin-inline-start: calc(100% - var(--page-padding) * 2);
+
+}
+
+.rec-icon {
+  color: var(--accent-color);
+  position: absolute;
+  inset-inline-end: calc(var(--page-padding) + 8px);
+  inset-block-start: var(--page-padding);
+
+}
+
+.rec-icon::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-inline-start: 11px;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px #FF0070);
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
 }
 
 
@@ -77,6 +124,8 @@
 .header__description {
   font-weight: 700;
   justify-self: start;
+  align-self: self-start;
+  text-align: left;
 }
 
 .list {
@@ -90,6 +139,21 @@
 }
 
 
-.shadow-text {
-  text-shadow: 3px 1px 0px var(--shadow-color);
+.text-link {
+  text-decoration: none;
+  text-shadow: 1px 1px 0px var(--shadow-color);
+}
+
+.text-link:focus {
+  border:none;
+  outline: none;
+}
+
+.text-link:focus-visible {
+  border: 1px solid currentColor;
+}
+
+.text-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

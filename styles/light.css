@@ -10,11 +10,6 @@
   background-image: url(/images/cover-image-light.png);
 }
 
-.header__theme-menu-button {
-  color: var(--basic-text-color);
-}
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -25,4 +20,9 @@
     --accent-color: #ff8dcd;
     --shadow-color: #ff0070;   
     }
+
+    .header__theme-menu-button {
+      color: var(--basic-text-color);
+    }
+
 }

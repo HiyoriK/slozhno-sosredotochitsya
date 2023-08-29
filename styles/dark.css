@@ -12,16 +12,6 @@
   --header-text-color: #db00ff;
   --shadow-color: #ff0070;
   background-image: url(/images/cover-image-dark.png);
-  
 }
 
-.page {
-  background-color: var(--background-color);
-  color: var(--basic-text-color);
-  
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
 
