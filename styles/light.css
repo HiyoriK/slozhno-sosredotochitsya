@@ -13,6 +13,15 @@
   border-color: var(--basic-text-color);
 }
 
+.page.theme_light .rec-icon{
+  color: var(--background-color);
+}
+
+.page.theme_light .rec-icon::after  {
+  background-color: var(--background-color);
+  filter: none;
+}
+
 .page.theme_light .header__theme-menu-button {
   color: var(--basic-text-color);
 }
