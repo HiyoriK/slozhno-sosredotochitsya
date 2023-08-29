@@ -1,9 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
+/* 
 .page.theme_dark {
   --basic-text-color: #f1b2ce;
   --second-text-color: #000028;
@@ -15,3 +10,43 @@
 }
 
 
+.page.theme_dark .decorated-zone::before,
+.page.theme_dark .decorated-zone::after {
+  border-color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .text-link {
+  text-shadow: 1px 1px 0px var(--accent-color);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --basic-text-color: #f1b2ce;
+    --second-text-color: #000028;
+    --accent-color: #ff0070;
+    --background-color: #000028;
+    --header-text-color: #db00ff;
+    --shadow-color: #b99ca9;
+  }
+
+  .page {
+   background-image: url(/images/cover-image-dark.png);;
+  }
+
+  .decorated-zone::before,
+  .decorated-zone::after {
+    border-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .text-link {
+    text-shadow: 1px 1px 0px var(--accent-color);
+  }
+}
+*/
