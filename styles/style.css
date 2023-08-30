@@ -186,8 +186,6 @@
     justify-self: end;
     max-inline-size: 364px;
   }
-
-
   .columns {
     grid-template-columns: minmax(236px, 315px) 1fr;
   }

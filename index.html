@@ -127,6 +127,29 @@
     <section class="content-section content-section__gallery">
       <h2 class="heading gallery-heading">А можно в картинках?</h2>
     </section>   
+    <ul class="gallery__list">
+      <li class="gallery__list-item">
+        <picture>
+          <source
+          srcset="./images/sunset.avif 1x, ./images/sunset.avif 2x"
+          type="image/avif"
+          >
+          <source
+          srcset="./images/sunset.webp 1x, ./images/sunset.webp 2x"
+          type="image/webp"
+          >
+          <img
+          loading="lazy"
+          class="list-item__sunset-picture"
+          srcset="./images/sunset.png 1x, ./images/sunset.png 2x"
+          alt="Векторное изображение заката в розово-стреневых тонах над морем, с цепью гор на горизонте и птицами в небе"
+          >
+        </picture>
+      </li>
+<li class="gallery__list-item"></li>
+<li class="gallery__list-item"></li>
+<li class="gallery__list-item"></li>
+    </ul>
     <footer class="footer decorated-zone">
       <h2 class="footer__heading">focus</h2>
     </footer>
