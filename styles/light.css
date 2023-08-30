@@ -14,15 +14,13 @@
 }
 
 .page.theme_light .rec-icon{
-  color: var(--background-color);
-}
-
-.page.theme_light .rec-icon::after  {
-  background-color: var(--background-color);
-  filter: none;
+  display: none;
 }
 
 .page.theme_light .header__theme-menu-button {
+  color: var(--basic-text-color);
+}
+.page.theme_light .heading {
   color: var(--basic-text-color);
 }
 
@@ -49,7 +47,15 @@
     border-color: var(--basic-text-color);
   }
 
+  .rec-icon{
+    display: none;
+  }
+
   .header__theme-menu-button {
+    color: var(--basic-text-color);
+  }
+
+  .heading {
     color: var(--basic-text-color);
   }
 
