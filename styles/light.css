@@ -32,12 +32,21 @@
 .page.theme_light .header__theme-menu-button {
   color: var(--basic-text-color);
 }
+
 .page.theme_light .heading {
   color: var(--basic-text-color);
 }
 
+.page.theme_light .header__heading {
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
 .page.theme_light .text-link {
   text-shadow: 1px 1px 0px var(--accent-color);
+}
+
+.page.theme_light .footer__heading {
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -83,9 +92,19 @@
     color: var(--basic-text-color);
   }
 
+  .header__heading {
+    text-shadow: 4px 4px 0px var(--accent-color);
+  }
+
   .text-link {
     text-shadow: 1px 1px 0px var(--accent-color);
   }
+
+  .footer__heading {
+    text-shadow: 4px 4px 0px var(--accent-color);
+  }
+
 }
 
 
+ 
