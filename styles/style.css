@@ -32,7 +32,7 @@
   display: grid;
   align-content: space-between;
   padding: var(--page-padding);
-  min-block-size: 668px;
+  min-block-size: 100vh;
 }
 
 .header {
@@ -51,6 +51,7 @@
   color: var(--accent-color);
   inset-inline-end: 18px;
   inset-block-start: var(--page-padding);
+  text-transform: uppercase;
 }
 
 .rec-icon::after {
