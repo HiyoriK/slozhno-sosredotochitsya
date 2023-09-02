@@ -37,6 +37,7 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #fff1f7;
@@ -79,8 +80,14 @@
   .footer__heading {
     text-shadow: 4px 4px 0px var(--accent-color);
   }
-
 }
 
+@media (prefers-color-scheme: light) and (width >= 1024px){
+  :root {
+    --shadow-color: #ff0070;
+  }
 
- 
+  .header__heading {
+    text-shadow: 4px 4px 0px var(--shadow-color);
+  }
+}
