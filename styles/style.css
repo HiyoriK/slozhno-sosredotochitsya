@@ -83,7 +83,7 @@
   background-color: transparent;
 }
 
-.header__theme-menu-button_active{
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 
