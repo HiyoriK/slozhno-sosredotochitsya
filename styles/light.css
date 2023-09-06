@@ -42,6 +42,10 @@
   .page.theme_light .header__heading {
     text-shadow: 4px 4px 0px var(--shadow-color);
   }
+
+  .page.theme_light .footer__heading {
+    text-shadow: 2px 2px 0px var(--shadow-color);
+  }
 }
 
 
