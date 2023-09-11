@@ -22,16 +22,16 @@
 .decorated-zone::after {
   content: "";
   display: inline-block;
+  margin: 0;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
-  margin: 0;
 }
 
 .decorated-zone {
-  display: grid;
   position: relative;
+  display: grid;
   align-content: space-between;
   padding: var(--page-padding);
   block-size: 100%;
@@ -48,7 +48,6 @@
   text-transform: uppercase;
   inset-inline-end: 18px;
   inset-block-start: var(--page-padding);
-  
 }
 
 .rec-icon::after {
@@ -86,8 +85,8 @@
 }
 
 .header__theme-menu-button_active:active {
-  pointer-events: none;
   outline: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:focus {
@@ -271,8 +270,8 @@
   }
 
   .gallery__list {
-    grid-auto-columns: 1fr;
     grid-template-rows: 192px 230px 318px;
+    grid-auto-columns: 1fr;
     gap: 20px;
   }
 
@@ -368,5 +367,3 @@
     margin-block-start: 60px;
   }
 }
-
-

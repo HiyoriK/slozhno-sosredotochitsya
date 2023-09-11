@@ -42,7 +42,7 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
-@media(1024px <= width < 1440px) {
+@media(width >= 1024px) {
 
   .page.theme_light .header__heading {
     text-shadow: 4px 4px 0px var(--shadow-color);
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (1024px <= width < 1440px) and (prefers-color-scheme: light) {
+@media screen and (width >= 1024px) and (prefers-color-scheme: light) {
   .header__heading {
 
    text-shadow: 4px 4px 0px var(--shadow-color);
