@@ -4,7 +4,7 @@
   --accent-color: #ff0070;
   --background-color: #000028;
   --header-text-color: #db00ff;
-  --shadow-color: #ff0070;
+  --shadow-color: hsl(334, 100%, 50%);
   --page-padding: clamp(10px, 10px, 20px);
   --main-font: 'IBM Plex Mono';
 }
