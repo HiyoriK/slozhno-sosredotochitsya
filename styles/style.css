@@ -84,11 +84,6 @@
   background-color: transparent;
 }
 
-.header__theme-menu-button_active:active {
-  outline: 1px solid currentColor;
-  pointer-events: none;
-}
-
 .header__theme-menu-button:focus {
   border: none;
   outline: none;
@@ -101,6 +96,11 @@
 .header__theme-menu-button:hover {
   outline: 1px solid currentColor;
   cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .heading {
